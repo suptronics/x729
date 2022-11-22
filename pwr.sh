@@ -71,4 +71,3 @@ echo "x729 Shutting down..."
 echo "0" > /sys/class/gpio/gpio$BUTTON/value
 ' > /usr/local/bin/x729softsd.sh
 sudo chmod +x /usr/local/bin/x729softsd.sh
-sudo systemctl enable pigpiod
