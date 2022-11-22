@@ -1,7 +1,10 @@
-#!/usr/bin/python
-import RPi.GPIO as GPIO
+#!/usr/bin/python3
 import pigpio
 import time
+from os import system
+system("sudo systemctl start pigpiod")
+
+time.sleep(1)
 
 try:
      servo = 13
@@ -38,5 +41,4 @@ try:
 
 
 except KeyboardInterrupt:
-    GPIO.cleanup() 
-
+    GPIO.cleanup()
